@@ -1,0 +1,124 @@
+body {
+  position: relative;
+  margin: -20px 0;
+}
+div#root {
+  padding-top: 20px;
+}
+.movie-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  margin: auto;
+  flex-flow: wrap;
+}
+.movie-item {
+  width: 20%;
+  height: 250px;
+  margin: 20px 5%;
+  border: 1px solid;
+  position:relative;
+  background-image: url(https://picsum.photos/200/200?grayscale);
+  background-position: center;
+  background-size: cover;
+}
+.movie-rating {
+  position: absolute;
+  right: 0;
+  border: 1px solid;
+  padding: 10px;
+  background: rgba(255,255,255,.5);
+}
+.movie-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 1px solid;
+  padding: 10px;
+  background: rgba(255,255,255,.5);
+  right: 0;
+  text-align: center;
+}
+span.movie-stars {
+  color: #ffd700a6;
+}
+.search-form {
+  display: flex;
+  justify-content: flex-start;
+  width: 72%;
+  margin: 20px auto;
+  align-items: center;
+}
+.search-form span {
+  padding: 0 20px;
+  box-sizing: border-box;
+  height: 25px;
+  border: 1px solid;
+}
+.search-me,.reset-me{
+  cursor: pointer;
+}
+.search-form input[type="text"] {
+  height: 25px;
+  border: 1px solid;
+  box-sizing: border-box;
+  min-width: 50%;
+}
+.display {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: -217px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.display-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.display-container h2{
+  color:#fff
+}
+
+.hidden {
+  display: none
+}
+.btn-plus-container {
+  display: flex;
+  width: 72%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.btn-div {
+  position: relative;
+  border: 1px solid;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+}
+.btn-plus-container p {
+  font-size: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.display input, .display button {
+  margin-top: 10px;
+  width: 50%;
+  height: 30px;
+}
+.display input::placeholder {
+  padding-left: 10px;
+  font-size: 14px;
+}
+.search-form .movie-stars i {
+  cursor: pointer;
+}
